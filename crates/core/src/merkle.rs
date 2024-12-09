@@ -1,7 +1,7 @@
 //! Merkle tree types.
 
 use serde::{Deserialize, Serialize};
-use utils::iter::DuplicateCheck;
+use tlsn_utils::iter::DuplicateCheck;
 
 use crate::hash::{Hash, HashAlgId, HashAlgorithm, TypedHash};
 

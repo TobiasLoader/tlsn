@@ -25,13 +25,13 @@ tlsn-tls-core = { workspace = true, features = ["serde"] }
 tlsn-universal-hash = { workspace = true }
 tlsn-utils-aio = { workspace = true }
 
-mpz-common = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-core = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-fields = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-garble = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ole = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ot = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-share-conversion = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
+mpz-common = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-common" }
+mpz-core = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-core" }
+mpz-fields = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-fields" }
+mpz-garble = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-garble" }
+mpz-ole = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ole" }
+mpz-ot = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ot" }
+mpz-share-conversion = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-share-conversion" }
 
 uid-mux = { version = "0.1", features = ["serio"] }
 ludi = { git = "https://github.com/sinui0/ludi", rev = "b590de5" }

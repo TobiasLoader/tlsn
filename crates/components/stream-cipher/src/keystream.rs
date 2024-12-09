@@ -2,7 +2,7 @@ use std::{collections::VecDeque, marker::PhantomData};
 
 use mpz_garble::{value::ValueRef, Execute, Load, Memory, Prove, Thread, Verify};
 use tracing::instrument;
-use utils::id::NestedId;
+use tlsn_utils::id::NestedId;
 
 use crate::{config::ExecutionMode, CtrCircuit, StreamCipherError};
 

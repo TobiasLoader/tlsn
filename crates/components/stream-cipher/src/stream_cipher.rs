@@ -4,7 +4,7 @@ use std::collections::HashMap;
 use tracing::instrument;
 
 use mpz_garble::{value::ValueRef, Decode, DecodePrivate, Execute, Load, Prove, Thread, Verify};
-use utils::id::NestedId;
+use tlsn_utils::id::NestedId;
 
 use crate::{
     cipher::CtrCircuit,

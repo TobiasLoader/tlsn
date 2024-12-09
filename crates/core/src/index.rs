@@ -107,7 +107,7 @@ impl From<Vec<PlaintextHashSecret>> for Index<PlaintextHashSecret> {
 
 #[cfg(test)]
 mod test {
-    use utils::range::RangeSet;
+    use tlsn_utils::range::RangeSet;
 
     use super::*;
 

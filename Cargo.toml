@@ -63,14 +63,14 @@ tlsn-utils = { git = "https://github.com/TobiasLoader/tlsn-utils.git", branch = 
 tlsn-utils-aio = { git = "https://github.com/TobiasLoader/tlsn-utils.git", branch = "transfer-encoding-support", package = "tlsn-utils-aio" }
 tlsn-verifier = { path = "crates/verifier" }
 
-mpz-circuits = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-common = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-core = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-garble = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-garble-core = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ole = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ot = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-share-conversion = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
+mpz-circuits = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-circuits" }
+mpz-common = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-common" }
+mpz-core = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-core" }
+mpz-garble = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-garble" }
+mpz-garble-core = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-garble-core" }
+mpz-ole = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ole" }
+mpz-ot = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ot" }
+mpz-share-conversion = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-share-conversion" }
 
 serio = { version = "0.1" }
 spansy = { git = "https://github.com/TobiasLoader/tlsn-utils.git", branch = "transfer-encoding-support", package = "spansy" }

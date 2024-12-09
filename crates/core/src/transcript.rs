@@ -40,7 +40,7 @@ mod proof;
 use std::{fmt, ops::Range};
 
 use serde::{Deserialize, Serialize};
-use utils::range::{Difference, IndexRanges, RangeSet, ToRangeSet, Union};
+use tlsn_utils::range::{Difference, IndexRanges, RangeSet, ToRangeSet, Union};
 
 use crate::connection::TranscriptLength;
 

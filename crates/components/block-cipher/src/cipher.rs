@@ -4,7 +4,7 @@ use async_trait::async_trait;
 
 use mpz_garble::{value::ValueRef, Decode, DecodePrivate, Execute, Load, Memory};
 use tracing::instrument;
-use utils::id::NestedId;
+use tlsn_utils::id::NestedId;
 
 use crate::{BlockCipher, BlockCipherCircuit, BlockCipherConfig, BlockCipherError, Visibility};
 

@@ -3,7 +3,7 @@
 use std::{collections::HashSet, fmt};
 
 use serde::{Deserialize, Serialize};
-use utils::range::ToRangeSet;
+use tlsn_utils::range::ToRangeSet;
 
 use crate::{
     attestation::Body,
