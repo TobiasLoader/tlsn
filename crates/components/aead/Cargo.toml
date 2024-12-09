@@ -20,10 +20,10 @@ tlsn-block-cipher = { workspace = true }
 tlsn-stream-cipher = { workspace = true }
 tlsn-universal-hash = { workspace = true }
 
-mpz-common = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-core = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-garble = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ot = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac", optional = true, features = [
+mpz-common = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-common" }
+mpz-core = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-core" }
+mpz-garble = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-garble" }
+mpz-ot = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ot", optional = true, features = [
     "ideal",
 ] }
 

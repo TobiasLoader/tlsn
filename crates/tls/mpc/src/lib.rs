@@ -27,7 +27,7 @@ pub use config::{
 pub use error::MpcTlsError;
 pub use follower::{FollowerCtrl, MpcTlsFollower, MpcTlsFollowerData};
 pub use leader::{LeaderCtrl, MpcTlsData, MpcTlsLeader};
-use utils_aio::duplex::Duplex;
+use tlsn_utils_aio::duplex::Duplex;
 
 /// A channel for sending and receiving messages between leader and follower
 pub type MpcTlsChannel = Box<dyn Duplex<msg::MpcTlsMessage>>;

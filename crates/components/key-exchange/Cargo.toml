@@ -16,14 +16,16 @@ default = ["mock"]
 mock = []
 
 [dependencies]
-mpz-garble = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-common = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-fields = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-ot = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
-mpz-share-conversion = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac", features = [
+mpz-garble = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-garble" }
+mpz-common = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-common" }
+mpz-fields = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-fields" }
+mpz-ot = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-ot", features = [
     "ideal",
 ] }
-mpz-circuits = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac" }
+mpz-share-conversion = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-share-conversion", features = [
+    "ideal",
+] }
+mpz-circuits = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-circuits" }
 
 p256 = { workspace = true, features = ["ecdh", "serde"] }
 async-trait = { workspace = true }
@@ -36,7 +38,7 @@ tracing = { workspace = true }
 rand = { workspace = true }
 
 [dev-dependencies]
-mpz-share-conversion = { git = "https://github.com/privacy-scaling-explorations/mpz", rev = "b8ae7ac", features = [
+mpz-share-conversion = { git = "https://github.com/TobiasLoader/mpz", branch = "temp-transfer-encoding-support", package = "mpz-share-conversion", features = [
     "ideal",
 ] }
 
