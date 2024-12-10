@@ -35,8 +35,24 @@ pub struct HttpTranscript {
 impl HttpTranscript {
     /// Parses the HTTP transcript from the provided transcripts.
     pub fn parse(transcript: &Transcript) -> Result<Self, spansy::ParseError> {
+
+        println!("Parse requests");
+        println!("Transcript: {:?}", transcript.sent());
+        println!("Transcript length: {:?}", transcript.sent().len());
+        println!("Bytes: {:?}", Bytes::copy_from_slice(transcript.sent()));
+        println!("Requests: {:?}", Requests::new(Bytes::copy_from_slice(transcript.sent())));
+        println!("UTF-8: {:?}", String::from_utf8(Bytes::copy_from_slice(transcript.sent()).to_vec()));
+
         let requests = Requests::new(Bytes::copy_from_slice(transcript.sent()))
             .collect::<Result<Vec<_>, _>>()?;
+
+        println!("Parse responses");
+        println!("Transcript: {:?}", transcript.received());
+        println!("Transcript length: {:?}", transcript.received().len());
+        println!("Bytes: {:?}", Bytes::copy_from_slice(transcript.received()));
+        println!("Responses: {:?}", Responses::new(Bytes::copy_from_slice(transcript.received())));
+        println!("UTF-8: {:?}", String::from_utf8(Bytes::copy_from_slice(transcript.received()).to_vec()));
+        
         let responses = Responses::new(Bytes::copy_from_slice(transcript.received()))
             .collect::<Result<Vec<_>, _>>()?;
 

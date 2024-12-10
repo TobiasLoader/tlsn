@@ -9,7 +9,7 @@ use notary_client::{Accepted, NotarizationRequest, NotaryClient};
 use std::{env, str};
 use tokio_util::compat::{FuturesAsyncReadCompatExt, TokioAsyncReadCompatExt};
 use tracing::debug;
-use utils::range::RangeSet;
+use tlsn_utils::range::RangeSet;
 
 use tlsn_common::config::ProtocolConfig;
 use tlsn_core::{request::RequestConfig, transcript::TranscriptCommitConfig};
